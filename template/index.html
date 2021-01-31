@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+</head>
+<body>
+
+    <p><b>Question A </b></p>
+	<form class="" action="data" method="post">
+        <input type="file" name="csvfile" value=""><br>
+        <p>Enter Plant ID Here</p>
+        <textarea name="message3" rows="1" cols="20"></textarea><br>
+        <input type="submit" name="" value="Output Yeild"><br>
+    </form>    
+    <p><b>Question B</b></p>
+	<form action="{{ url_for('predict')}}" method="POST">
+		<p>Enter Plant ID Here</p>
+		<!-- <input type="text" name="comment"/> -->
+		<textarea name="message" rows="1" cols="20"></textarea>
+        <br/>
+        <p>Enter Day Here</p>
+		<!-- <input type="text" name="comment"/> -->
+		<textarea name="message2" rows="1" cols="20"></textarea>
+        <br/>
+        <br/>
+
+		<input type="submit" class="btn-info" value="Output Total Yeild">
+		
+	</form>
+	<p><b>Question C</b></p>
+    <form class="" action="mean" method="post">
+        
+       
+        <input type="submit" name="" value="Mean Difference of AC and DC POWER"><br>
+    </form>
+</body>
+</html>
